@@ -18,6 +18,10 @@ public class King extends Piece { // classe do rei, herda os atributos e metodos
     @Override
 	//Função que verifica as possibilidades de movimento para King
     public void SetPossible_Pos(Board tab,int x, int y){
+
+		 System.out.print("\033[H\033[2J"); 
+		System.out.flush(); 
+		
     	System.out.println("Você selecionou um " + ANSI_RED + "REI!" + ANSI_RESET);
         Scanner sc = new Scanner(System.in);
     	

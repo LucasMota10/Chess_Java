@@ -28,7 +28,8 @@ public class Pawn extends Piece { // classe dos peoes, herda os atributos e meto
     	
     	 movi_possibilityX = new ArrayList();
     	 movi_possibilityY = new ArrayList();
-    	
+    	 System.out.print("\033[H\033[2J"); 
+		System.out.flush(); 
     	 System.out.println("Você selecionou um " + ANSI_RED + "PEAO!" + ANSI_RESET);
     	System.out.println(ANSI_RED + "As Movimentações possiveis estão marcadas em amarelo!" + ANSI_RESET);
     	

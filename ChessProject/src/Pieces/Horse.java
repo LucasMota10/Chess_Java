@@ -22,6 +22,9 @@ public class Horse extends Piece { // classe dos cavalos, herda os atributos e m
     	movi_possibilityX = new ArrayList();
    	 	movi_possibilityY = new ArrayList();
    	 	
+		System.out.print("\033[H\033[2J"); 
+		System.out.flush(); 
+		
     	System.out.println("Você selecionou um " + ANSI_RED + "CAVALO!" + ANSI_RESET);
     	System.out.println(ANSI_RED + "As Movimentações possiveis estão marcadas em amarelo!" + ANSI_RESET);
     	  	

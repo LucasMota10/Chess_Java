@@ -29,9 +29,12 @@ public class Bishop extends Piece {
         movi_possibilityX = new ArrayList();
  	    movi_possibilityY = new ArrayList();
 
+         System.out.print("\033[H\033[2J"); 
+		System.out.flush(); 
+        
     	System.out.println("Você selecionou um" + ANSI_RED + " BISPO!" + ANSI_RESET);
         System.out.println(ANSI_RED + "As Movimentações possiveis estão marcadas em amarelo!" + ANSI_RESET);
-        
+
 		Commons.Cor actual_Cor = tab.board[x][y].getPiece().getCor();
     
         int ix = x;

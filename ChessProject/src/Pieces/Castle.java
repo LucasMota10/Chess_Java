@@ -24,6 +24,9 @@ public class Castle extends Piece { // classe dos torres, herda os atributos e m
         movi_possibilityX = new ArrayList();
         movi_possibilityY = new ArrayList();
 
+        System.out.print("\033[H\033[2J"); 
+		System.out.flush(); 
+        
         System.out.println("Você selecionou uma " + ANSI_RED + "TORRE!" + ANSI_RESET);
         System.out.println(ANSI_RED + "As Movimentações possiveis estão marcadas em amarelo!" + ANSI_RESET);
 
@@ -100,7 +103,7 @@ public class Castle extends Piece { // classe dos torres, herda os atributos e m
             } else
                 lock = false;
         }
-
+        
         tab.Print_Board_Possibility(movi_possibilityX, movi_possibilityY);
     }
 }

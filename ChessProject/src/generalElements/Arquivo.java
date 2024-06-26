@@ -37,7 +37,7 @@ public class Arquivo {
 	public void leBuffered() throws IOException {
 		BufferedReader b = new BufferedReader(new FileReader(Nome_do_Arquivo));
 		
-		String linha = "--------\n";
+		String linha = "-----------------------";
 		System.out.println(linha);
 		
 		while((linha=b.readLine())!= null) {
